@@ -5,7 +5,8 @@ import uinput
 import time               # library for time reading time
 import RPi.GPIO as GPIO   # library to control Rpi GPIOs
 pintgpio=12
-events = (uinput.KEY_L)
+events = (uinput.KEY_UP, uinput.KEY_DOWN, uinput.KEY_LEFT, uinput.KEY_RIGHT, uinput.KEY_LEFTCTRL)
+
 device = uinput.Device(events)
 right = False
 
